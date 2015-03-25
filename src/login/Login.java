@@ -79,11 +79,12 @@ public class Login extends Application {
         TextField userTextField = new TextField();
         grid.add(userTextField, 1, 1);
 
-        Label pw = new Label("Nome:");
-        grid.add(pw, 0, 2);
-
-        PasswordField pwBox = new PasswordField();
-        grid.add(pwBox, 1, 2);
+        Label nome = new Label("Nome:");
+        grid.add(nome, 0, 2);
+        TextField userNome = new TextField();
+        grid.add(userNome,1,2);
+        //PasswordField pwBox = new PasswordField();
+        //grid.add(pwBox, 1, 2);
         
         Label sexo = new Label("Sexo:");
         grid.add(sexo, 0, 3);
@@ -128,7 +129,7 @@ public class Login extends Application {
             @Override
             public void handle(ActionEvent e) {
                 actiontarget.setId("actiontarget");
-                actiontarget.setText("Sign in button pressed");
+                actiontarget.setText("Aluno Cadastrado com sucesso!!");
             }
         });
 
